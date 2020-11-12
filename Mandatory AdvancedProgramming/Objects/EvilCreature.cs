@@ -16,6 +16,11 @@ namespace Mandatory_AdvancedProgramming.Objects
             _attackObject = attackObject;
         }
 
+        public EvilCreature()
+        {
+            
+        }
+
         public string Name
         {
             get { return _name; }
@@ -81,5 +86,11 @@ namespace Mandatory_AdvancedProgramming.Objects
                 BattleLog.Save(Name + " is dead. Hitpoints dropped to " + _hitPoints);
             }
         }
+
+        #region Template
+
+        public abstract EvilCreature CreateEvilCreature(string creaturePick);
+
+        #endregion
     }
 }

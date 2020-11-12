@@ -4,7 +4,7 @@ using Mandatory_AdvancedProgramming.Objects.Attack;
 
 namespace Mandatory_AdvancedProgramming.Factory
 {
-    public class EnemyCreatureTempate : Work
+    public class EnemyCreatureTempate : EvilCreature
     {
         private static string cd = "";
         private static Random random = new Random();
